@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2 id="title">Static Methods</h2>
+
+    <script type="text/javascript">
+
+    class Square {
+        constructor (_width) {
+            this.width = _width;
+            this.height = _width;
+        }
+
+        static equals (a, b) {
+            return a.width * a.height === b.width * b.height;
+        }
+
+        static isValidDimensions (width, height) {
+            return width === height;
+        }
+    }
+
+    let square1 = new Square(8);
+    let square2 = new Square(8);
+
+    console.log(square.isValidDimensions(7, 6));
+    </script>
+</body>
+</html>
